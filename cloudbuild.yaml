@@ -3,6 +3,6 @@ steps:
     args: ["install", "github.com/johanfrick-mobenga/gcp-cd-codelab/gcp-cd-codelab"]
     env: ["PROJECT_ROOT=github.com/johanfrick-mobenga/gcp-cd-codelab/gcp-cd-codelab"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/mobenga-system-architects/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "eu.gcr.io/mobenga-system-architects/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "gcr.io/mobenga-system-architects/gcp-cd-codelab:$REVISION_ID"
+  - "eu.gcr.io/mobenga-system-architects/gcp-cd-codelab:$REVISION_ID"
